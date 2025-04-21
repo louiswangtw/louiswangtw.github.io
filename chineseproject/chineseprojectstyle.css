@@ -1,7 +1,16 @@
-li, main, h1, h2, p{
+main, h1, h2, p{
     font: sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+    margin: 0;
 }
 ul{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
+    justify-content: space-evenly;
+}
+footer{ /*出現在網頁最下面，是不是要用grid?*/
+    text-align: center;
+    min-height: 100vh;
 }
