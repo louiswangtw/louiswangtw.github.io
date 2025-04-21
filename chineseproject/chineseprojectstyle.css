@@ -1,0 +1,7 @@
+li, main, h1, h2, p{
+    font: sans-serif;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
