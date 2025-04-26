@@ -12,15 +12,15 @@ dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 1;
 	padding: 1;
 	border: 1;
 	font-size: 100%;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-	vertical-align: baseline;
+    font-family: Arial, sans-serif;
+    vertical-align: baseline;
     color: rgb(0, 0, 0);
     line-height: 100%;
 }
@@ -40,13 +40,41 @@ p {
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 1;
     display: grid;
     grid-template-columns: 25% 25% 25%;
     justify-content: space-evenly;
   }
   body{
-    background-image: ../images/cladealc.jpg;
+    /*background: url('../image/cladealc.jpg') 20px 10px no-repeat;*/
+    background-image: url('../image/cladealc.jpg');
+    background-position: centers; /*left top 限象 0,0 right bottom 限象 100, 100*/
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: 100%;
   }
+  main {
+    margin: 0 auto;
+    padding: 1px;
+    max-width: auto;
+    background-color: rgba(243, 202, 120, 0.8);
+    border-radius: 10px;
+  }
+    footer {
+        text-align: center; /* Centers the text horizontally */
+        position: fixed; /* Fixes the footer at the bottom of the viewport */
+        bottom: 0; /* Positions the footer at the very bottom */
+        width: 100%; /* Ensures the footer spans the full width of the page */
+        padding: 10px 0; /* Optional: Add some padding for spacing */
+        font-size: 14px; /* Optional: Adjust font size */
+        border-top: 1px solid #ddd; /* Optional: Add a top border for separation */
+    }
+    a:hover {
+        text-decoration: none; /* Example: Add underline on hover */
+        color: rgb(176, 176, 29);
+    }
+    link:target{
+            background-color: #ffeb3b;
+            border-color: #ff9800;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            transform: scale(1.02);
+    }
