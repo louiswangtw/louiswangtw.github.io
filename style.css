@@ -45,3 +45,8 @@ ul {
     grid-template-columns: 25% 25% 25%;
     justify-content: space-evenly;
   }
+  body{
+    background-image: ../images/cladealc.jpg;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
