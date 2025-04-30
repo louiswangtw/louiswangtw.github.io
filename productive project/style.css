@@ -13,7 +13,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+menu, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 1;
 	padding: 1;
@@ -25,13 +25,13 @@ time, mark, audio, video {
     line-height: 100%;
 }
 
-h1  {
+h1{
     font-size: 200%;
     font-family: serif;
     color: rgb(0, 75, 173);
     text-align: center;
 }
-h2  {
+h2 {
     margin-bottom: 50px;
 }
 p {
@@ -45,21 +45,21 @@ ul {
     grid-template-columns: 25% 25% 25%;
     justify-content: space-evenly;
   }
-  body{
+body{
     /*background: url('../image/cladealc.jpg') 20px 10px no-repeat;*/
     background-image: url('../image/cladealc.jpg');
     background-position: centers; /*left top 限象 0,0 right bottom 限象 100, 100*/
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  main {
+main {
     margin: 0 auto;
     padding: 1px;
     max-width: auto;
     background-color: rgba(243, 202, 120, 0.8);
     border-radius: 10px;
   }
-    footer {
+footer {
         text-align: center; /* Centers the text horizontally */
         position: fixed; /* Fixes the footer at the bottom of the viewport */
         bottom: 0; /* Positions the footer at the very bottom */
@@ -68,13 +68,23 @@ ul {
         font-size: 14px; /* Optional: Adjust font size */
         border-top: 1px solid #ddd; /* Optional: Add a top border for separation */
     }
-    a:hover {
+a:hover {
         text-decoration: none; /* Example: Add underline on hover */
         color: rgb(176, 176, 29);
     }
-    link:target{
+link:target{
             background-color: #ffeb3b;
             border-color: #ff9800;
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
             transform: scale(1.02);
     }
+.navbars {
+    background-color: #b85b5b;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    text-align: center;
+}
+ul img {
+    width: 20%;
+}
